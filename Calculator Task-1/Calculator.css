@@ -1,0 +1,89 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+    background: rgb(103,15,255);
+    background: linear-gradient(90deg, rgba(103,15,255,0.9699230033810399) 25%, rgba(168,42,241,0.9475140397956058) 76%);
+  height: 100vh;
+}
+*{box-sizing:border-box;}
+
+.calculatorFrame{
+    
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto;
+    margin-top: 10%;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 0 5px #999999;
+    border-style: double;
+    
+}
+.outputScreen{
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 80px;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    padding-top: 20px;
+    border: 5px black solid;
+}
+.cal-but{
+    background: rgb(255,252,15);
+    background: linear-gradient(90deg, rgba(255,252,15,0.9699230033810399) 25%, rgba(42,241,48,0.9475140397956058) 100%);
+    /* background: rgb(255,75,15);
+    background: linear-gradient(90deg, rgba(255,75,15,0.9699230033810399) 28%, rgba(168,42,241,0.9475140397956058) 96%); */
+    padding: 15px;
+}
+ul#buttons{
+    list-style-type: none;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+    
+}
+ul#buttons li{
+    font-size: 24px;
+    color: white;
+    background: red;
+    border: 1px black solid;
+    
+    width: 20%;
+    margin:5px 2.5%;
+    padding-top: 11px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+   cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+ul#buttons li:hover,ul#buttons li:visited{
+    background: blue;
+
+    color: black;
+}
+ul#buttons li:active{
+    background: #000000;
+}
+li#equals{
+width: 100% !important;
+border-radius: 10px !important;
+}
